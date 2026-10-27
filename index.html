@@ -1,1 +1,440 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="Jihyun Jeong | Portfolio" content="Web site created using create-react-app"/><meta property="og:title" content="Jihyun Jeong | Portfolio"/><meta property="og:type" content="website"/><meta property="og:url" content="https://jihyun-jeong-854.github.io/"/><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script><script src="./canvasjs.min.js"></script><title>Jihyun Jeong | Portfolio</title><link href="/static/css/main.997fed3b.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,p=r[0],f=r[1],i=r[2],c=0,s=[];c<p.length;c++)l=p[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(a&&a(r);s.length;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,p=1;p<t.length;p++){var f=t[p];0!==o[f]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var p=this["webpackJsonppersonal-portfolio"]=this["webpackJsonppersonal-portfolio"]||[],f=p.push.bind(p);p.push=r,p=p.slice();for(var i=0;i<p.length;i++)r(p[i]);var a=f;t()}([])</script><script src="/static/js/2.28a73ece.chunk.js"></script><script src="/static/js/main.cd8bdcb1.chunk.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jihyun Jeong</title>
+<meta name="description" content="Jihyun Jeong — ML engineer building and evaluating LLM agent systems. Available for full-time roles from early 2027." />
+<meta property="og:title" content="Jihyun Jeong" />
+<meta property="og:description" content="ML engineer building and evaluating LLM agent systems. Available for full-time roles from early 2027." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jihyun-jeong-854.github.io/" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json" />
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f6f7f9;
+    --card:#ffffff;
+    --border:#e7e9ee;
+    --ink:#1a1d24;
+    --ink-soft:#4a5160;
+    --muted:#79818f;
+    --accent:#2563eb;
+    --accent-soft:#eef3ff;
+    --ok:#0d9f6e;
+    --ok-soft:#e6f7f0;
+    --radius:16px;
+    --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.05);
+    --maxw:960px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:saturate(180%) blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;}
+  nav .brand{font-weight:700;letter-spacing:-.01em;color:var(--ink);}
+  nav .links{display:flex;gap:26px;}
+  nav .links a{color:var(--ink-soft);font-size:14px;font-weight:500;}
+  nav .links a:hover{color:var(--accent);text-decoration:none;}
+  @media(max-width:640px){nav .links{display:none;}}
+
+  /* ---------- hero ---------- */
+  header.hero{padding:64px 0 36px;}
+  .hero-grid{display:flex;gap:40px;align-items:center;}
+  @media(max-width:720px){.hero-grid{flex-direction:column;text-align:center;gap:24px;}}
+  .photo{
+    flex:0 0 auto;width:168px;height:168px;border-radius:50%;object-fit:cover;object-position:50% 35%;
+    border:4px solid #fff;box-shadow:var(--shadow);
+  }
+  .hero h1{font-size:40px;line-height:1.1;margin:0 0 10px;letter-spacing:-.02em;}
+  .role{color:var(--ink-soft);font-size:16px;font-weight:500;margin:0 0 16px;}
+  .role b{color:var(--ink);font-weight:600;}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--ok-soft);color:#0a7a54;
+    border:1px solid #bdebd6;
+    padding:7px 14px;border-radius:999px;font-size:14px;font-weight:600;
+  }
+  .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(13,159,110,.18);}
+  .contact{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:18px;}
+  @media(max-width:720px){.contact{justify-content:center;}}
+  .contact a,.contact span{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:13.5px;color:var(--ink-soft);
+    background:var(--bg-soft);border:1px solid var(--border);
+    padding:6px 12px;border-radius:999px;
+  }
+  .contact a:hover{color:var(--accent);border-color:#cdd9f7;text-decoration:none;}
+  .contact svg{width:15px;height:15px;flex:0 0 auto;}
+
+  /* ---------- sections ---------- */
+  section{padding:30px 0;border-top:1px solid var(--border);}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin:0 0 20px;}
+  .sec-head h2{font-size:14px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0;font-weight:700;}
+  .lead{font-size:17px;color:var(--ink-soft);max-width:70ch;margin:0;}
+
+  /* cards / items */
+  .item{padding:18px 0;border-bottom:1px solid var(--border);}
+  .item:last-child{border-bottom:none;}
+  .item .top{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap;}
+  .item .title{font-weight:650;color:var(--ink);font-size:16px;margin:0;}
+  .item .sub{color:var(--ink-soft);font-size:14px;margin:2px 0 0;}
+  .item .when{color:var(--muted);font-size:13px;font-weight:500;white-space:nowrap;}
+  .item ul{margin:11px 0 0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;}
+  .item ul li{margin:4px 0;}
+  .item ul li::marker{color:var(--accent);}
+
+  /* publications */
+  .pub{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);}
+  .pub:last-child{border-bottom:none;}
+  .pub .yr{flex:0 0 auto;font-size:13px;font-weight:700;color:var(--accent);background:var(--accent-soft);
+    border-radius:8px;padding:4px 9px;height:fit-content;}
+  .pub .ptitle{font-weight:650;color:var(--ink);}
+  .pub .authors{font-size:14px;color:var(--ink-soft);margin:2px 0 6px;}
+  .pub .authors .me{color:var(--ink);font-weight:700;}
+  .pub .venue{font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;}
+  .pub .venue .tag{color:var(--ink-soft);}
+  .pub .venue a{font-weight:500;}
+  .pub .plinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+  .pub .plinks a{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:12.5px;font-weight:600;color:var(--ink-soft);
+    background:var(--bg-soft);border:1px solid var(--border);
+    padding:5px 11px;border-radius:8px;
+  }
+  .pub .plinks a:hover{color:var(--accent);border-color:#cdd9f7;background:var(--accent-soft);text-decoration:none;}
+  .pub .plinks svg{width:14px;height:14px;}
+
+  /* toolkit */
+  .toolkit{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;}
+  .tgroup h4{margin:0 0 9px;font-size:13px;color:var(--ink);font-weight:700;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;}
+  .chip{font-size:13px;color:var(--ink-soft);background:var(--bg-soft);border:1px solid var(--border);
+    padding:4px 11px;border-radius:999px;}
+
+  .extra{display:flex;flex-wrap:wrap;gap:8px;}
+  .extra .chip{background:var(--accent-soft);border-color:#dbe6ff;color:#3457a8;}
+
+  footer{padding:40px 0 56px;border-top:1px solid var(--border);color:var(--muted);font-size:13.5px;text-align:center;}
+  footer a{color:var(--ink-soft);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="brand">Jihyun Jeong</span>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img class="photo" src="/static/media/jihyun.687174fe.jpg" alt="Jihyun Jeong" />
+    <div>
+      <h1>Jihyun Jeong</h1>
+      <p class="role"><b>ML engineer</b> building &amp; evaluating <b>LLM agent systems</b> · Blacksburg, VA</p>
+      <span class="badge"><span class="dot"></span>Available for full-time roles from early 2027</span>
+      <div class="contact">
+        <a href="mailto:jihyunj@vt.edu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          jihyunj@vt.edu
+        </a>
+        <a href="https://www.linkedin.com/in/jihyunjeong854" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/jihyun-jeong-854" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.8-4.6 5 .4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://scholar.google.com/citations?user=MmTmoBgAAAAJ&hl=en" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 9l11 7 9-5.7V16h2V9zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 4.4z"/></svg>
+          Google Scholar
+        </a>
+        <a href="https://jihyun-jeong-854.github.io" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          Website
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <div class="sec-head"><h2>About</h2></div>
+    <p class="lead">
+      I like moving into new areas and getting up to speed by building things. I joined ReDS Lab in the
+      second year of my master's, new to LLM agents, and co-first-authored two papers within a year, including
+      one at ICML 2026. Both started from a vague concern about how agents behave, which I turned into a testable
+      question and then built the evaluation to measure. I want to keep doing this kind of investigation on
+      frontier systems.
+    </p>
+  </section>
+
+  <section id="experience">
+    <div class="sec-head"><h2>Experience</h2></div>
+
+    <div class="item">
+      <div class="top">
+        <div>
+          <p class="title">Graduate Researcher — ReDS Lab, Virginia Tech</p>
+          <p class="sub">Agent evaluation infrastructure · automated eval pipelines · LLM-as-a-judge</p>
+        </div>
+        <span class="when">2025 – Present</span>
+      </div>
+      <ul>
+        <li>Built a testbed on OpenHands and TheAgentCompany for running privacy evaluations on agents, and created the benchmark data and realistic task scenarios for InferLink (ICML 2026).</li>
+        <li>Read agent transcripts to find failure modes, then used them to design new scenarios and an LLM-as-a-judge scoring pipeline.</li>
+        <li>For MemDrift, connected agents to multiple memory architectures (Mem0, MemPalace, SimpleMem), generated adversarial test scenarios with an automated pipeline, and evaluated tool calls across 7 frontier models with LLM judges.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="top">
+        <div>
+          <p class="title">Undergraduate Research Intern — Information System Lab, Hongik Univ.</p>
+          <p class="sub">Privacy-preserving federated learning</p>
+        </div>
+        <span class="when">2023 – 2024</span>
+      </div>
+      <ul>
+        <li>Compared differential privacy and gradient sparsification for federated learning, analyzed the results, and produced findings that shaped the lab's next experiments.</li>
+        <li>Built a hierarchical federated learning simulation on FEMNIST to evaluate approaches side by side.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="top">
+        <div>
+          <p class="title">Data Science Intern — Minds and Company</p>
+          <p class="sub">OCR &amp; computer vision</p>
+        </div>
+        <span class="when">2022</span>
+      </div>
+      <ul>
+        <li>Fine-tuned TrOCR on 11.8M Korean document images, improving accuracy primarily by correcting tokenization, special characters, and decoding settings.</li>
+        <li>Built a tooth segmentation model for intraoral photos and wrote baseline code for an AI competition.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="sec-head"><h2>Publications</h2></div>
+
+    <div class="pub">
+      <span class="yr">2026</span>
+      <div>
+        <div class="ptitle">From Weak Cues to Real Identities: Evaluating Inference-Driven De-Anonymization in LLM Agents</div>
+        <div class="authors">Myeongseob Ko*, <span class="me">Jihyun Jeong*</span>, Sumiran Singh Thakur, Gyuhak Kim, Ruoxi Jia</div>
+        <div class="venue">
+          <span class="tag">ICML 2026</span> ·
+          <span class="tag">*equal contribution</span>
+        </div>
+        <div class="plinks">
+          <a href="https://jihyun-jeong-854.github.io/InferLink/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            Website
+          </a>
+          <a href="https://github.com/jihyun-jeong-854/InferLink/tree/main" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.8-4.6 5 .4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            Code
+          </a>
+          <a href="https://arxiv.org/abs/2603.18382" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            arXiv:2603.18382
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <span class="yr">2026</span>
+      <div>
+        <div class="ptitle">Memory-Induced Tool-Drift in LLM Agents</div>
+        <div class="authors">Mahavir Dabas*, <span class="me">Jihyun Jeong*</span>, Ming Jin, Ruoxi Jia</div>
+        <div class="venue">
+          <span class="tag">Submitted to NAACL 2026</span> ·
+          <span class="tag">*equal contribution</span>
+        </div>
+        <div class="plinks">
+          <a href="https://github.com/jihyun-jeong-854/memdrift" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.8-4.6 5 .4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            Code
+          </a>
+          <a href="https://huggingface.co/datasets/jhjeong99/memdrift" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+            Dataset
+          </a>
+          <a href="https://arxiv.org/abs/2605.24941" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            arXiv:2605.24941
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="sec-head"><h2>Projects</h2></div>
+
+    <div class="item">
+      <div class="top">
+        <p class="title">Data-efficient reasoning SFT</p>
+        <span class="when">2025</span>
+      </div>
+      <ul>
+        <li>Designed a data-selection experiment for Qwen2.5-3B, selecting 15K examples through PIR-guided chain-of-thought pruning and diversity sampling; achieved 50% on MMLU versus 32% for a random set of the same size, and published the model and data on Hugging Face.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="top">
+        <p class="title">Private ViT inference (SMPC + DP)</p>
+        <span class="when">2025</span>
+      </div>
+      <ul>
+        <li>Evaluated private ViT inference by combining secure multiparty computation with Semi2k and DP-SGD, measuring the resulting memory and latency costs on CIFAR-10.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="sec-head"><h2>Education</h2></div>
+
+    <div class="item">
+      <div class="top">
+        <div>
+          <p class="title">Ph.D., Computer Engineering — Virginia Tech</p>
+          <p class="sub">Open to full-time industry roles from early 2027</p>
+        </div>
+        <span class="when">2026 – Present</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top">
+        <div>
+          <p class="title">M.S., Computer Engineering — Virginia Tech</p>
+          <p class="sub">GPA 3.71 / 4.0</p>
+        </div>
+        <span class="when">2024 – 2026</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top">
+        <div>
+          <p class="title">B.S., Computer Engineering — Hongik University</p>
+          <p class="sub">Seoul, South Korea</p>
+        </div>
+        <span class="when">2019 – 2024</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="sec-head"><h2>Technical Skills</h2></div>
+    <div class="toolkit">
+      <div class="tgroup">
+        <h4>Languages</h4>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Bash</span>
+        </div>
+      </div>
+      <div class="tgroup">
+        <h4>LLM &amp; agents</h4>
+        <div class="chips">
+          <span class="chip">OpenHands</span>
+          <span class="chip">TheAgentCompany</span>
+          <span class="chip">LangGraph</span>
+          <span class="chip">Mem0</span>
+          <span class="chip">MemPalace</span>
+          <span class="chip">SimpleMem</span>
+          <span class="chip">LLM-as-a-judge</span>
+          <span class="chip">Red-teaming</span>
+        </div>
+      </div>
+      <div class="tgroup">
+        <h4>ML &amp; training</h4>
+        <div class="chips">
+          <span class="chip">PyTorch</span>
+          <span class="chip">Hugging Face Transformers</span>
+          <span class="chip">LLaMA-Factory</span>
+          <span class="chip">Scikit-Learn</span>
+          <span class="chip">Fine-tuning / SFT</span>
+        </div>
+      </div>
+      <div class="tgroup">
+        <h4>Privacy &amp; security</h4>
+        <div class="chips">
+          <span class="chip">DP-SGD (Opacus)</span>
+          <span class="chip">SMPC (Semi2k)</span>
+          <span class="chip">Differential Privacy</span>
+          <span class="chip">Federated Learning</span>
+        </div>
+      </div>
+      <div class="tgroup">
+        <h4>Infrastructure &amp; tools</h4>
+        <div class="chips">
+          <span class="chip">Docker</span>
+          <span class="chip">Linux</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="extracurricular">
+    <div class="sec-head"><h2>Extracurricular</h2></div>
+    <div class="extra">
+      <span class="chip">VT AutoDrive</span>
+      <span class="chip">Women in CyberSecurity (WiCyS)</span>
+      <span class="chip">VT KSA</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Jihyun Jeong · <a href="mailto:jihyunj@vt.edu">jihyunj@vt.edu</a> · Blacksburg, VA<br />
+    Available for full-time roles from early 2027.
+  </div>
+</footer>
+
+</body>
+</html>
