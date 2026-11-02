@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Private ViT inference">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17b088"/>
+      <stop offset="1" stop-color="#0c7a5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="200" fill="url(#g)"/>
+  <g fill="#ffffff" opacity="0.28">
+    <rect x="44" y="52" width="28" height="28" rx="4"/><rect x="78" y="52" width="28" height="28" rx="4"/><rect x="112" y="52" width="28" height="28" rx="4"/>
+    <rect x="44" y="86" width="28" height="28" rx="4"/><rect x="78" y="86" width="28" height="28" rx="4"/><rect x="112" y="86" width="28" height="28" rx="4"/>
+    <rect x="44" y="120" width="28" height="28" rx="4"/><rect x="78" y="120" width="28" height="28" rx="4"/><rect x="112" y="120" width="28" height="28" rx="4"/>
+  </g>
+  <g transform="translate(196 62)" fill="none" stroke="#ffffff" stroke-width="7" opacity="0.95">
+    <rect x="6" y="36" width="60" height="46" rx="8" fill="#ffffff" stroke="none"/>
+    <path d="M18 36 v-14 a18 18 0 0 1 36 0 v14"/>
+  </g>
+  <text x="20" y="178" fill="#ffffff" opacity="0.92" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="15" font-weight="700">Private inference · SMPC+DP</text>
+</svg>

@@ -105,6 +105,17 @@
   .item ul{margin:11px 0 0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;}
   .item ul li{margin:4px 0;}
   .item ul li::marker{color:var(--accent);}
+  .item .chips{margin-top:11px;}
+
+  /* project cards with thumbnail */
+  .item.proj{display:flex;gap:20px;align-items:flex-start;}
+  .pthumb{flex:0 0 auto;width:188px;height:118px;border-radius:12px;object-fit:cover;
+    border:1px solid var(--border);box-shadow:var(--shadow);background:var(--bg-soft);}
+  .pbody{flex:1 1 auto;min-width:0;}
+  @media(max-width:640px){
+    .item.proj{flex-direction:column;}
+    .pthumb{width:100%;height:150px;}
+  }
 
   /* publications */
   .pub{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);}
@@ -137,6 +148,14 @@
   .extra{display:flex;flex-wrap:wrap;gap:8px;}
   .extra .chip{background:var(--accent-soft);border-color:#dbe6ff;color:#3457a8;}
 
+  /* news */
+  .news{list-style:none;margin:0;padding:0;}
+  .news li{display:flex;gap:16px;padding:11px 0;border-bottom:1px solid var(--border);}
+  .news li:last-child{border-bottom:none;}
+  .news .nd{flex:0 0 76px;color:var(--accent);font-weight:700;font-size:13px;white-space:nowrap;padding-top:1px;}
+  .news .nt{color:var(--ink-soft);font-size:14.5px;}
+  .news .nt b{color:var(--ink);font-weight:650;}
+
   footer{padding:40px 0 56px;border-top:1px solid var(--border);color:var(--muted);font-size:13.5px;text-align:center;}
   footer a{color:var(--ink-soft);}
 </style>
@@ -148,6 +167,7 @@
     <span class="brand">Jihyun Jeong</span>
     <div class="links">
       <a href="#about">About</a>
+      <a href="#news">News</a>
       <a href="#experience">Experience</a>
       <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
@@ -200,6 +220,36 @@
       question and then built the evaluation to measure. I want to keep doing this kind of investigation on
       frontier systems.
     </p>
+  </section>
+
+  <section id="news">
+    <div class="sec-head"><h2>News</h2></div>
+    <ul class="news">
+      <li>
+        <span class="nd">Aug 2026</span>
+        <span class="nt">Started as a <b>Graduate Teaching Assistant</b> for ECE 4424 / CS 4824 (Machine Learning) at Virginia Tech.</span>
+      </li>
+      <li>
+        <span class="nd">Aug 2026</span>
+        <span class="nt">Began the <b>Ph.D.</b> program in Computer Engineering at Virginia Tech.</span>
+      </li>
+      <li>
+        <span class="nd">May 2026</span>
+        <span class="nt"><b>InferLink</b> accepted to <b>ICML 2026</b> (co-first author).</span>
+      </li>
+      <li>
+        <span class="nd">May 2026</span>
+        <span class="nt"><b>MemDrift</b> accepted to the <b>Second Workshop on Agents in the Wild: Safety, Security, and Beyond</b> at <b>ICML 2026</b> (co-first author).</span>
+      </li>
+      <li>
+        <span class="nd">Jun 2025</span>
+        <span class="nt">Joined <b>ReDS Lab</b> at Virginia Tech.</span>
+      </li>
+      <li>
+        <span class="nd">Sep 2024</span>
+        <span class="nt">Started the <b>M.S.</b> in Computer Engineering at Virginia Tech.</span>
+      </li>
+    </ul>
   </section>
 
   <section id="experience">
@@ -294,7 +344,7 @@
         <div class="ptitle">Memory-Induced Tool-Drift in LLM Agents</div>
         <div class="authors">Mahavir Dabas*, <span class="me">Jihyun Jeong*</span>, Ming Jin, Ruoxi Jia</div>
         <div class="venue">
-          <span class="tag">Submitted to NAACL 2026</span> ·
+          <span class="tag">ICML 2026 — Second Workshop on Agents in the Wild: Safety, Security, and Beyond</span> ·
           <span class="tag">*equal contribution</span>
         </div>
         <div class="plinks">
@@ -318,24 +368,100 @@
   <section id="projects">
     <div class="sec-head"><h2>Projects</h2></div>
 
-    <div class="item">
-      <div class="top">
-        <p class="title">Data-efficient reasoning SFT</p>
-        <span class="when">2025</span>
+    <div class="item proj">
+      <img class="pthumb" src="/static/proj/sft.svg" alt="Data-efficient reasoning SFT thumbnail" loading="lazy" />
+      <div class="pbody">
+        <div class="top">
+          <p class="title">Data-efficient reasoning SFT</p>
+          <span class="when">2025</span>
+        </div>
+        <ul>
+          <li>Designed a data-selection experiment for Qwen2.5-3B, selecting 15K examples through PIR-guided chain-of-thought pruning and diversity sampling; achieved 50% on MMLU versus 32% for a random set of the same size, and published the model and data on Hugging Face.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Qwen2.5-3B</span>
+          <span class="chip">LLaMA-Factory</span>
+          <span class="chip">Chain-of-Thought</span>
+          <span class="chip">MMLU</span>
+          <span class="chip">Hugging Face</span>
+        </div>
       </div>
-      <ul>
-        <li>Designed a data-selection experiment for Qwen2.5-3B, selecting 15K examples through PIR-guided chain-of-thought pruning and diversity sampling; achieved 50% on MMLU versus 32% for a random set of the same size, and published the model and data on Hugging Face.</li>
-      </ul>
     </div>
 
-    <div class="item">
-      <div class="top">
-        <p class="title">Private ViT inference (SMPC + DP)</p>
-        <span class="when">2025</span>
+    <div class="item proj">
+      <img class="pthumb" src="/static/proj/vit.svg" alt="Private ViT inference thumbnail" loading="lazy" />
+      <div class="pbody">
+        <div class="top">
+          <p class="title">Private ViT inference (SMPC + DP)</p>
+          <span class="when">2025</span>
+        </div>
+        <ul>
+          <li>Evaluated private ViT inference by combining secure multiparty computation with Semi2k and DP-SGD, measuring the resulting memory and latency costs on CIFAR-10.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">SMPC (Semi2k)</span>
+          <span class="chip">DP-SGD</span>
+          <span class="chip">Vision Transformer</span>
+          <span class="chip">CIFAR-10</span>
+        </div>
       </div>
-      <ul>
-        <li>Evaluated private ViT inference by combining secure multiparty computation with Semi2k and DP-SGD, measuring the resulting memory and latency costs on CIFAR-10.</li>
-      </ul>
+    </div>
+
+    <div class="item proj">
+      <img class="pthumb" src="/static/proj/controlnet.svg" alt="Lightweight ControlNet thumbnail" loading="lazy" />
+      <div class="pbody">
+        <div class="top">
+          <p class="title">Lightweight ControlNet (MLP-based)</p>
+          <span class="when">2024</span>
+        </div>
+        <ul>
+          <li>Replaced ControlNet's convolutional trainable copy with pixel-wise MLPs to cut GPU memory and speed up inference, fine-tuning Stable Diffusion on the Fill50k dataset within a single Colab GPU. <a href="https://github.com/jihyun-jeong-854/controlnet_mlp" target="_blank" rel="noopener">Code →</a></li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Stable Diffusion</span>
+          <span class="chip">ControlNet</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">Model Compression</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item proj">
+      <img class="pthumb" src="/static/proj/adas.svg" alt="ADAS for Personal Mobility thumbnail" loading="lazy" />
+      <div class="pbody">
+        <div class="top">
+          <p class="title">ADAS for Personal Mobility — Undergraduate Capstone</p>
+          <span class="when">2023 – 2024</span>
+        </div>
+        <ul>
+          <li>Built a collision-warning system for e-scooters: YOLOv5 obstacle detection with Deep SORT tracking and a bounding-box-based speed-estimation algorithm, trained on 200K AI Hub pedestrian-crossing images and deployed on iOS via PyTorch Lite. <a href="https://github.com/jihyun-jeong-854/ADAS_PM" target="_blank" rel="noopener">Code →</a></li>
+        </ul>
+        <div class="chips">
+          <span class="chip">YOLOv5</span>
+          <span class="chip">Deep SORT</span>
+          <span class="chip">PyTorch Lite</span>
+          <span class="chip">iOS / Swift</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item proj">
+      <img class="pthumb" src="/static/proj/trocr.svg" alt="Korean Document OCR with TrOCR thumbnail" loading="lazy" />
+      <div class="pbody">
+        <div class="top">
+          <p class="title">Korean Document OCR with TrOCR</p>
+          <span class="when">2022</span>
+        </div>
+        <ul>
+          <li>Fine-tuned a ViT encoder + Korean BERT decoder (VisionEncoderDecoder) on ~11.8M character samples from AI Hub administrative documents, cutting character error rate from 7.5% to 1.75% through custom tokenization, similar-character normalization, and label correction. <a href="https://blog.genon.ai/44" target="_blank" rel="noopener">Blog →</a></li>
+        </ul>
+        <div class="chips">
+          <span class="chip">TrOCR</span>
+          <span class="chip">Vision Transformer</span>
+          <span class="chip">Hugging Face</span>
+          <span class="chip">PyTorch</span>
+        </div>
+      </div>
     </div>
   </section>
 

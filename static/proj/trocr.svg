@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Korean Document OCR with TrOCR">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="200" fill="url(#g)"/>
+  <!-- document -->
+  <g transform="translate(58 40)">
+    <rect width="96" height="120" rx="8" fill="#ffffff"/>
+    <g fill="#1e3a8a" opacity="0.85">
+      <rect x="14" y="18" width="68" height="7" rx="3.5"/>
+      <rect x="14" y="34" width="56" height="7" rx="3.5"/>
+      <rect x="14" y="50" width="68" height="7" rx="3.5"/>
+      <rect x="14" y="66" width="44" height="7" rx="3.5"/>
+      <rect x="14" y="82" width="62" height="7" rx="3.5"/>
+      <rect x="14" y="98" width="38" height="7" rx="3.5"/>
+    </g>
+  </g>
+  <!-- arrow -->
+  <path d="M166 100 h34 m-10 -9 l10 9 l-10 9" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.9"/>
+  <!-- recognized text box -->
+  <g transform="translate(210 64)">
+    <rect width="78" height="72" rx="8" fill="#ffffff" opacity="0.18"/>
+    <text x="39" y="46" text-anchor="middle" fill="#ffffff" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="34" font-weight="800">가</text>
+  </g>
+  <text x="20" y="182" fill="#ffffff" opacity="0.92" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="15" font-weight="700">OCR · TrOCR · 1.75% CER</text>
+</svg>
